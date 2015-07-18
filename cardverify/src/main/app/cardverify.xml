@@ -7,10 +7,10 @@
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/cxf http://www.mulesoft.org/schema/mule/cxf/current/mule-cxf.xsd">
-    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="${http.port}" doc:name="HTTP Listener Configuration"/>
-    <flow name="iftverifyFlow">
-        <http:listener config-ref="HTTP_Listener_Configuration" path="/iftverify" doc:name="HTTP"/>
-        <cxf:simple-service serviceClass="com.ktb.verify.iftVerifyService" doc:name="CXF"/>
-        <component class="com.ktb.verify.iftVerifyService" doc:name="iftVerifyService"/>
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <flow name="cardverifyFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/cardverify" doc:name="HTTP"/>
+        <cxf:simple-service serviceClass="com.ktb.verify.cardVerifyService" doc:name="CXF"/>
+        <component class="com.ktb.verify.cardVerifyService" doc:name="cardVeriffyService"/>
     </flow>
 </mule>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph __version="3.5.0" author="extend-it" created="Tue Jul 21 09:00:17 ICT 2015" description="JSON To Xml&lt;iftVerify&gt;" guiVersion="3.4.4.P" id="1437451917389" licenseCode="Unlicensed" licenseType="Unknown" modified="Tue Jul 21 09:00:17 ICT 2015" modifiedBy="extend-it" name="JSON_To_Xml_iftVerify_" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __index="54" __referenceCounter="1" __sourcePath="{}/iftVerify/request/attachDocList/AttachDoc" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="203cffc5-7717-4572-8a8b-5fab50e2503f" _parent_id="__parent_id" _type="Input" id="dc064a15-becf-401f-9e13-a0c214fa2151">
+<Record fieldDelimiter="," name="AttachDoc" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="54" __sourcePath="{}/iftVerify/request/attachDocList/AttachDoc/chronicleID" containerType="SINGLE" label="chronicleID" name="chronicleID" type="string"/>
+<Field __index="55" __sourcePath="{}/iftVerify/request/attachDocList/AttachDoc/docSeqID" containerType="SINGLE" label="docSeqID" name="docSeqID" type="integer"/>
+<Field __index="56" __sourcePath="{}/iftVerify/request/attachDocList/AttachDoc/docType" containerType="SINGLE" label="docType" name="docType" type="string"/>
+<Field __index="57" __sourcePath="{}/iftVerify/request/attachDocList/AttachDoc/docVersion" containerType="SINGLE" label="docVersion" name="docVersion" type="string"/>
+<Field __index="58" __sourcePath="{}/iftVerify/request/attachDocList/AttachDoc/fileName" containerType="SINGLE" label="fileName" name="fileName" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="1" __referenceCounter="1" __schemaType="{http://bean.ift.ws.ktbcs.com}AttachDoc" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:attachDocList/ns1:AttachDoc" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="09df5585-ab8d-4e90-9fc2-3209df81cc7e" _parent_id="__parent_id" _type="Output" id="fd2ec462-7294-464f-8e59-b052cdc6712d">
+<Record fieldDelimiter="," name="AttachDoc" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __implementationClass="java.lang.String" __index="1" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:attachDocList/ns1:AttachDoc/ns1:chronicleID" containerType="SINGLE" label="ns1:chronicleID" name="ns1_chronicleID" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="2" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:attachDocList/ns1:AttachDoc/ns1:docSeqID" containerType="SINGLE" label="ns1:docSeqID" name="ns1_docSeqID" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="3" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:attachDocList/ns1:AttachDoc/ns1:docType" containerType="SINGLE" label="ns1:docType" name="ns1_docType" type="string"/>
+<Field __implementationClass="java.lang.String" __index="4" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:attachDocList/ns1:AttachDoc/ns1:docVersion" containerType="SINGLE" label="ns1:docVersion" name="ns1_docVersion" type="string"/>
+<Field __implementationClass="java.lang.String" __index="5" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:attachDocList/ns1:AttachDoc/ns1:fileName" containerType="SINGLE" label="ns1:fileName" name="ns1_fileName" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="59" __referenceCounter="1" __sourcePath="{}/iftVerify/request/fwdRateList/FwdRate" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="203cffc5-7717-4572-8a8b-5fab50e2503f" _parent_id="__parent_id" _type="Input" id="dae04bcc-4d1e-4618-87e0-94af8c614879">
+<Record fieldDelimiter="," name="FwdRate" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="59" __sourcePath="{}/iftVerify/request/fwdRateList/FwdRate/dealNo" containerType="SINGLE" label="dealNo" name="dealNo" type="string"/>
+<Field __index="60" __sourcePath="{}/iftVerify/request/fwdRateList/FwdRate/exchangeAmount" containerType="SINGLE" label="exchangeAmount" name="exchangeAmount" type="string"/>
+<Field __index="61" __sourcePath="{}/iftVerify/request/fwdRateList/FwdRate/expireDate" containerType="SINGLE" label="expireDate" name="expireDate" type="string"/>
+<Field __index="62" __sourcePath="{}/iftVerify/request/fwdRateList/FwdRate/fwdRate" containerType="SINGLE" label="fwdRate" name="fwdRate" type="string"/>
+<Field __index="63" __sourcePath="{}/iftVerify/request/fwdRateList/FwdRate/fwdRateCurrency" containerType="SINGLE" label="fwdRateCurrency" name="fwdRateCurrency" type="string"/>
+<Field __index="64" __sourcePath="{}/iftVerify/request/fwdRateList/FwdRate/fwdRateSeqNo" containerType="SINGLE" label="fwdRateSeqNo" name="fwdRateSeqNo" type="integer"/>
+<Field __index="65" __sourcePath="{}/iftVerify/request/fwdRateList/FwdRate/limitAmount" containerType="SINGLE" label="limitAmount" name="limitAmount" type="decimal"/>
+<Field __index="66" __sourcePath="{}/iftVerify/request/fwdRateList/FwdRate/offerRateType" containerType="SINGLE" label="offerRateType" name="offerRateType" type="string"/>
+<Field __index="67" __sourcePath="{}/iftVerify/request/fwdRateList/FwdRate/useAmount" containerType="SINGLE" label="useAmount" name="useAmount" type="decimal"/>
+</Record>
+</Metadata>
+<Metadata __index="27" __referenceCounter="1" __schemaType="{http://bean.ift.ws.ktbcs.com}FwdRate" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:fwdRateList/ns1:FwdRate" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="09df5585-ab8d-4e90-9fc2-3209df81cc7e" _parent_id="__parent_id" _type="Output" id="4677138b-9de6-4e78-9cc4-926fdc2b7255">
+<Record fieldDelimiter="," name="FwdRate" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __implementationClass="java.lang.String" __index="27" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:fwdRateList/ns1:FwdRate/ns1:dealNo" containerType="SINGLE" label="ns1:dealNo" name="ns1_dealNo" type="string"/>
+<Field __implementationClass="java.lang.String" __index="28" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:fwdRateList/ns1:FwdRate/ns1:exchangeAmount" containerType="SINGLE" label="ns1:exchangeAmount" name="ns1_exchangeAmount" type="string"/>
+<Field __implementationClass="java.lang.String" __index="29" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:fwdRateList/ns1:FwdRate/ns1:expireDate" containerType="SINGLE" label="ns1:expireDate" name="ns1_expireDate" type="string"/>
+<Field __implementationClass="java.lang.String" __index="30" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:fwdRateList/ns1:FwdRate/ns1:fwdRate" containerType="SINGLE" label="ns1:fwdRate" name="ns1_fwdRate" type="string"/>
+<Field __implementationClass="java.lang.String" __index="31" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:fwdRateList/ns1:FwdRate/ns1:fwdRateCurrency" containerType="SINGLE" label="ns1:fwdRateCurrency" name="ns1_fwdRateCurrency" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="32" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:fwdRateList/ns1:FwdRate/ns1:fwdRateSeqNo" containerType="SINGLE" label="ns1:fwdRateSeqNo" name="ns1_fwdRateSeqNo" type="integer"/>
+<Field __implementationClass="java.math.BigDecimal" __index="33" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:fwdRateList/ns1:FwdRate/ns1:limitAmount" containerType="SINGLE" label="ns1:limitAmount" name="ns1_limitAmount" type="decimal"/>
+<Field __implementationClass="java.lang.String" __index="34" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:fwdRateList/ns1:FwdRate/ns1:offerRateType" containerType="SINGLE" label="ns1:offerRateType" name="ns1_offerRateType" type="string"/>
+<Field __implementationClass="java.math.BigDecimal" __index="35" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:fwdRateList/ns1:FwdRate/ns1:useAmount" containerType="SINGLE" label="ns1:useAmount" name="ns1_useAmount" type="decimal"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/iftVerify" _dataStructure="OBJECT" _id="__id" _type="Input" id="203cffc5-7717-4572-8a8b-5fab50e2503f">
+<Record fieldDelimiter="," name="iftVerify" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="0" __sourcePath="{}/iftVerify/request/amount" containerType="SINGLE" label="amount" name="amount" type="decimal"/>
+<Field __index="1" __sourcePath="{}/iftVerify/request/benAcct" containerType="SINGLE" label="benAcct" name="benAcct" type="string"/>
+<Field __index="2" __sourcePath="{}/iftVerify/request/benAddr1" containerType="SINGLE" label="benAddr1" name="benAddr1" type="string"/>
+<Field __index="3" __sourcePath="{}/iftVerify/request/benAddr2" containerType="SINGLE" label="benAddr2" name="benAddr2" type="string"/>
+<Field __index="4" __sourcePath="{}/iftVerify/request/benAddr3" containerType="SINGLE" label="benAddr3" name="benAddr3" type="string"/>
+<Field __index="5" __sourcePath="{}/iftVerify/request/benAddress1" containerType="SINGLE" label="benAddress1" name="benAddress1" type="string"/>
+<Field __index="6" __sourcePath="{}/iftVerify/request/benAddress2" containerType="SINGLE" label="benAddress2" name="benAddress2" type="string"/>
+<Field __index="7" __sourcePath="{}/iftVerify/request/benAddress3" containerType="SINGLE" label="benAddress3" name="benAddress3" type="string"/>
+<Field __index="8" __sourcePath="{}/iftVerify/request/benBankName" containerType="SINGLE" label="benBankName" name="benBankName" type="string"/>
+<Field __index="9" __sourcePath="{}/iftVerify/request/benBic" containerType="SINGLE" label="benBic" name="benBic" type="string"/>
+<Field __index="10" __sourcePath="{}/iftVerify/request/benBranchName" containerType="SINGLE" label="benBranchName" name="benBranchName" type="string"/>
+<Field __index="11" __sourcePath="{}/iftVerify/request/benCountry" containerType="SINGLE" label="benCountry" name="benCountry" type="string"/>
+<Field __index="12" __sourcePath="{}/iftVerify/request/benCountryName" containerType="SINGLE" label="benCountryName" name="benCountryName" type="string"/>
+<Field __index="13" __sourcePath="{}/iftVerify/request/benEmail" containerType="SINGLE" label="benEmail" name="benEmail" type="string"/>
+<Field __index="14" __sourcePath="{}/iftVerify/request/benName" containerType="SINGLE" label="benName" name="benName" type="string"/>
+<Field __index="15" __sourcePath="{}/iftVerify/request/benPhone" containerType="SINGLE" label="benPhone" name="benPhone" type="string"/>
+<Field __index="16" __sourcePath="{}/iftVerify/request/chargeType" containerType="SINGLE" label="chargeType" name="chargeType" type="string"/>
+<Field __index="17" __sourcePath="{}/iftVerify/request/cifId" containerType="SINGLE" label="cifId" name="cifId" type="string"/>
+<Field __index="18" __sourcePath="{}/iftVerify/request/currency" containerType="SINGLE" label="currency" name="currency" type="string"/>
+<Field __index="19" __sourcePath="{}/iftVerify/request/effDate" containerType="SINGLE" label="effDate" name="effDate" type="string"/>
+<Field __index="20" __sourcePath="{}/iftVerify/request/exchangeRate" containerType="SINGLE" label="exchangeRate" name="exchangeRate" type="string"/>
+<Field __index="21" __sourcePath="{}/iftVerify/request/exchangeTy" containerType="SINGLE" label="exchangeTy" name="exchangeTy" type="string"/>
+<Field __index="22" __sourcePath="{}/iftVerify/request/iftRemark" containerType="SINGLE" label="iftRemark" name="iftRemark" type="string"/>
+<Field __index="23" __sourcePath="{}/iftVerify/request/orderingAcct" containerType="SINGLE" label="orderingAcct" name="orderingAcct" type="string"/>
+<Field __index="24" __sourcePath="{}/iftVerify/request/orderingAddr1" containerType="SINGLE" label="orderingAddr1" name="orderingAddr1" type="string"/>
+<Field __index="25" __sourcePath="{}/iftVerify/request/orderingAddr2" containerType="SINGLE" label="orderingAddr2" name="orderingAddr2" type="string"/>
+<Field __index="26" __sourcePath="{}/iftVerify/request/orderingAddr3" containerType="SINGLE" label="orderingAddr3" name="orderingAddr3" type="string"/>
+<Field __index="27" __sourcePath="{}/iftVerify/request/orderingAmount" containerType="SINGLE" label="orderingAmount" name="orderingAmount" type="decimal"/>
+<Field __index="28" __sourcePath="{}/iftVerify/request/orderingBank" containerType="SINGLE" label="orderingBank" name="orderingBank" type="string"/>
+<Field __index="29" __sourcePath="{}/iftVerify/request/orderingBic" containerType="SINGLE" label="orderingBic" name="orderingBic" type="string"/>
+<Field __index="30" __sourcePath="{}/iftVerify/request/orderingBranch" containerType="SINGLE" label="orderingBranch" name="orderingBranch" type="string"/>
+<Field __index="31" __sourcePath="{}/iftVerify/request/orderingCurrency" containerType="SINGLE" label="orderingCurrency" name="orderingCurrency" type="string"/>
+<Field __index="32" __sourcePath="{}/iftVerify/request/orderingCustomerID" containerType="SINGLE" label="orderingCustomerID" name="orderingCustomerID" type="string"/>
+<Field __index="33" __sourcePath="{}/iftVerify/request/orderingEmail" containerType="SINGLE" label="orderingEmail" name="orderingEmail" type="string"/>
+<Field __index="34" __sourcePath="{}/iftVerify/request/orderingFax" containerType="SINGLE" label="orderingFax" name="orderingFax" type="string"/>
+<Field __index="35" __sourcePath="{}/iftVerify/request/orderingId" containerType="SINGLE" label="orderingId" name="orderingId" type="string"/>
+<Field __index="36" __sourcePath="{}/iftVerify/request/orderingMobile" containerType="SINGLE" label="orderingMobile" name="orderingMobile" type="string"/>
+<Field __index="37" __sourcePath="{}/iftVerify/request/orderingName" containerType="SINGLE" label="orderingName" name="orderingName" type="string"/>
+<Field __index="38" __sourcePath="{}/iftVerify/request/orderingNameThai" containerType="SINGLE" label="orderingNameThai" name="orderingNameThai" type="string"/>
+<Field __index="39" __sourcePath="{}/iftVerify/request/orderingPhone" containerType="SINGLE" label="orderingPhone" name="orderingPhone" type="string"/>
+<Field __index="40" __sourcePath="{}/iftVerify/request/orderingType" containerType="SINGLE" label="orderingType" name="orderingType" type="string"/>
+<Field __index="41" __sourcePath="{}/iftVerify/request/otherPartyEmail" containerType="SINGLE" label="otherPartyEmail" name="otherPartyEmail" type="string"/>
+<Field __index="42" __sourcePath="{}/iftVerify/request/purposeCode" containerType="SINGLE" label="purposeCode" name="purposeCode" type="string"/>
+<Field __index="43" __sourcePath="{}/iftVerify/request/purposeDescription" containerType="SINGLE" label="purposeDescription" name="purposeDescription" type="string"/>
+<Field __index="44" __sourcePath="{}/iftVerify/request/remitInfo1" containerType="SINGLE" label="remitInfo1" name="remitInfo1" type="string"/>
+<Field __index="45" __sourcePath="{}/iftVerify/request/remitInfo2" containerType="SINGLE" label="remitInfo2" name="remitInfo2" type="string"/>
+<Field __index="46" __sourcePath="{}/iftVerify/request/remitInfo3" containerType="SINGLE" label="remitInfo3" name="remitInfo3" type="string"/>
+<Field __index="47" __sourcePath="{}/iftVerify/request/remitInfo4" containerType="SINGLE" label="remitInfo4" name="remitInfo4" type="string"/>
+<Field __index="48" __sourcePath="{}/iftVerify/request/termID" containerType="SINGLE" label="termID" name="termID" type="string"/>
+<Field __index="49" __sourcePath="{}/iftVerify/request/transDate" containerType="SINGLE" label="transDate" name="transDate" type="string"/>
+<Field __index="50" __sourcePath="{}/iftVerify/request/transRefNo" containerType="SINGLE" label="transRefNo" name="transRefNo" type="string"/>
+<Field __index="51" __sourcePath="{}/iftVerify/request/transSource" containerType="SINGLE" label="transSource" name="transSource" type="string"/>
+<Field __index="52" __sourcePath="{}/iftVerify/request/transTime" containerType="SINGLE" label="transTime" name="transTime" type="string"/>
+<Field __index="53" __sourcePath="{}/iftVerify/request/userID" containerType="SINGLE" label="userID" name="userID" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __schemaType="{http://service.ift.ws.ktbcs.com/}iftVerify" __sourcePath="{http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify" _dataStructure="OBJECT" _id="__id" _type="Output" id="09df5585-ab8d-4e90-9fc2-3209df81cc7e">
+<Record fieldDelimiter="," name="iftVerify" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __implementationClass="java.math.BigDecimal" __index="0" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:amount" containerType="SINGLE" label="ns1:amount" name="ns1_amount" type="decimal"/>
+<Field __implementationClass="java.lang.String" __index="6" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:benAcct" containerType="SINGLE" label="ns1:benAcct" name="ns1_benAcct" type="string"/>
+<Field __implementationClass="java.lang.String" __index="7" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:benAddr1" containerType="SINGLE" label="ns1:benAddr1" name="ns1_benAddr1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="8" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:benAddr2" containerType="SINGLE" label="ns1:benAddr2" name="ns1_benAddr2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="9" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:benAddr3" containerType="SINGLE" label="ns1:benAddr3" name="ns1_benAddr3" type="string"/>
+<Field __implementationClass="java.lang.String" __index="10" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:benAddress1" containerType="SINGLE" label="ns1:benAddress1" name="ns1_benAddress1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="11" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:benAddress2" containerType="SINGLE" label="ns1:benAddress2" name="ns1_benAddress2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="12" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:benAddress3" containerType="SINGLE" label="ns1:benAddress3" name="ns1_benAddress3" type="string"/>
+<Field __implementationClass="java.lang.String" __index="13" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:benBankName" containerType="SINGLE" label="ns1:benBankName" name="ns1_benBankName" type="string"/>
+<Field __implementationClass="java.lang.String" __index="14" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:benBic" containerType="SINGLE" label="ns1:benBic" name="ns1_benBic" type="string"/>
+<Field __implementationClass="java.lang.String" __index="15" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:benBranchName" containerType="SINGLE" label="ns1:benBranchName" name="ns1_benBranchName" type="string"/>
+<Field __implementationClass="java.lang.String" __index="16" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:benCountry" containerType="SINGLE" label="ns1:benCountry" name="ns1_benCountry" type="string"/>
+<Field __implementationClass="java.lang.String" __index="17" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:benCountryName" containerType="SINGLE" label="ns1:benCountryName" name="ns1_benCountryName" type="string"/>
+<Field __implementationClass="java.lang.String" __index="18" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:benEmail" containerType="SINGLE" label="ns1:benEmail" name="ns1_benEmail" type="string"/>
+<Field __implementationClass="java.lang.String" __index="19" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:benName" containerType="SINGLE" label="ns1:benName" name="ns1_benName" type="string"/>
+<Field __implementationClass="java.lang.String" __index="20" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:benPhone" containerType="SINGLE" label="ns1:benPhone" name="ns1_benPhone" type="string"/>
+<Field __implementationClass="java.lang.String" __index="21" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:chargeType" containerType="SINGLE" label="ns1:chargeType" name="ns1_chargeType" type="string"/>
+<Field __implementationClass="java.lang.String" __index="22" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:cifId" containerType="SINGLE" label="ns1:cifId" name="ns1_cifId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="23" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:currency" containerType="SINGLE" label="ns1:currency" name="ns1_currency" type="string"/>
+<Field __implementationClass="java.lang.String" __index="24" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:effDate" containerType="SINGLE" label="ns1:effDate" name="ns1_effDate" type="string"/>
+<Field __implementationClass="java.lang.String" __index="25" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:exchangeRate" containerType="SINGLE" label="ns1:exchangeRate" name="ns1_exchangeRate" type="string"/>
+<Field __implementationClass="java.lang.String" __index="26" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:exchangeTy" containerType="SINGLE" label="ns1:exchangeTy" name="ns1_exchangeTy" type="string"/>
+<Field __implementationClass="java.lang.String" __index="36" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:iftRemark" containerType="SINGLE" label="ns1:iftRemark" name="ns1_iftRemark" type="string"/>
+<Field __implementationClass="java.lang.String" __index="37" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingAcct" containerType="SINGLE" label="ns1:orderingAcct" name="ns1_orderingAcct" type="string"/>
+<Field __implementationClass="java.lang.String" __index="38" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingAddr1" containerType="SINGLE" label="ns1:orderingAddr1" name="ns1_orderingAddr1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="39" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingAddr2" containerType="SINGLE" label="ns1:orderingAddr2" name="ns1_orderingAddr2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="40" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingAddr3" containerType="SINGLE" label="ns1:orderingAddr3" name="ns1_orderingAddr3" type="string"/>
+<Field __implementationClass="java.math.BigDecimal" __index="41" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingAmount" containerType="SINGLE" label="ns1:orderingAmount" name="ns1_orderingAmount" type="decimal"/>
+<Field __implementationClass="java.lang.String" __index="42" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingBank" containerType="SINGLE" label="ns1:orderingBank" name="ns1_orderingBank" type="string"/>
+<Field __implementationClass="java.lang.String" __index="43" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingBic" containerType="SINGLE" label="ns1:orderingBic" name="ns1_orderingBic" type="string"/>
+<Field __implementationClass="java.lang.String" __index="44" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingBranch" containerType="SINGLE" label="ns1:orderingBranch" name="ns1_orderingBranch" type="string"/>
+<Field __implementationClass="java.lang.String" __index="45" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingCurrency" containerType="SINGLE" label="ns1:orderingCurrency" name="ns1_orderingCurrency" type="string"/>
+<Field __implementationClass="java.lang.String" __index="46" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingCustomerID" containerType="SINGLE" label="ns1:orderingCustomerID" name="ns1_orderingCustomerID" type="string"/>
+<Field __implementationClass="java.lang.String" __index="47" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingEmail" containerType="SINGLE" label="ns1:orderingEmail" name="ns1_orderingEmail" type="string"/>
+<Field __implementationClass="java.lang.String" __index="48" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingFax" containerType="SINGLE" label="ns1:orderingFax" name="ns1_orderingFax" type="string"/>
+<Field __implementationClass="java.lang.String" __index="49" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingId" containerType="SINGLE" label="ns1:orderingId" name="ns1_orderingId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="50" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingMobile" containerType="SINGLE" label="ns1:orderingMobile" name="ns1_orderingMobile" type="string"/>
+<Field __implementationClass="java.lang.String" __index="51" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingName" containerType="SINGLE" label="ns1:orderingName" name="ns1_orderingName" type="string"/>
+<Field __implementationClass="java.lang.String" __index="52" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingNameThai" containerType="SINGLE" label="ns1:orderingNameThai" name="ns1_orderingNameThai" type="string"/>
+<Field __implementationClass="java.lang.String" __index="53" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingPhone" containerType="SINGLE" label="ns1:orderingPhone" name="ns1_orderingPhone" type="string"/>
+<Field __implementationClass="java.lang.String" __index="54" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:orderingType" containerType="SINGLE" label="ns1:orderingType" name="ns1_orderingType" type="string"/>
+<Field __implementationClass="java.lang.String" __index="55" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:otherPartyEmail" containerType="SINGLE" label="ns1:otherPartyEmail" name="ns1_otherPartyEmail" type="string"/>
+<Field __implementationClass="java.lang.String" __index="56" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:purposeCode" containerType="SINGLE" label="ns1:purposeCode" name="ns1_purposeCode" type="string"/>
+<Field __implementationClass="java.lang.String" __index="57" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:purposeDescription" containerType="SINGLE" label="ns1:purposeDescription" name="ns1_purposeDescription" type="string"/>
+<Field __implementationClass="java.lang.String" __index="58" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:remitInfo1" containerType="SINGLE" label="ns1:remitInfo1" name="ns1_remitInfo1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="59" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:remitInfo2" containerType="SINGLE" label="ns1:remitInfo2" name="ns1_remitInfo2" type="string"/>
+<Field __implementationClass="java.lang.String" __index="60" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:remitInfo3" containerType="SINGLE" label="ns1:remitInfo3" name="ns1_remitInfo3" type="string"/>
+<Field __implementationClass="java.lang.String" __index="61" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:remitInfo4" containerType="SINGLE" label="ns1:remitInfo4" name="ns1_remitInfo4" type="string"/>
+<Field __implementationClass="java.lang.String" __index="62" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:termID" containerType="SINGLE" label="ns1:termID" name="ns1_termID" type="string"/>
+<Field __implementationClass="java.lang.String" __index="63" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:transDate" containerType="SINGLE" label="ns1:transDate" name="ns1_transDate" type="string"/>
+<Field __implementationClass="java.lang.String" __index="64" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:transRefNo" containerType="SINGLE" label="ns1:transRefNo" name="ns1_transRefNo" type="string"/>
+<Field __implementationClass="java.lang.String" __index="65" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:transSource" containerType="SINGLE" label="ns1:transSource" name="ns1_transSource" type="string"/>
+<Field __implementationClass="java.lang.String" __index="66" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:transTime" containerType="SINGLE" label="ns1:transTime" name="ns1_transTime" type="string"/>
+<Field __implementationClass="java.lang.String" __index="67" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerify/ns0:request/ns1:userID" containerType="SINGLE" label="ns1:userID" name="ns1_userID" type="string"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="dict:outputPayload" guiName="XML WRITER" guiX="900" guiY="20" id="EXT_XML_WRITER0" type="EXT_XML_WRITER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<clover:element clover:name="ns0:iftVerify" xmlns:clover="http://www.cloveretl.com/ns/xmlmapping" xmlns:ns0="http://service.ift.ws.ktbcs.com/" clover:inPort="0">
+  <clover:element clover:name="ns0:request">
+    <clover:element clover:name="ns1:amount" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_amount</clover:element>
+    <clover:element clover:name="ns1:attachDocList" xmlns:ns1="http://bean.ift.ws.ktbcs.com">
+      <clover:element clover:name="ns1:AttachDoc" clover:inPort="1" clover:key="__parent_id" clover:parentKey="__id">
+        <clover:element clover:name="ns1:chronicleID">$1.ns1_chronicleID</clover:element>
+        <clover:element clover:name="ns1:docSeqID">$1.ns1_docSeqID</clover:element>
+        <clover:element clover:name="ns1:docType">$1.ns1_docType</clover:element>
+        <clover:element clover:name="ns1:docVersion">$1.ns1_docVersion</clover:element>
+        <clover:element clover:name="ns1:fileName">$1.ns1_fileName</clover:element>
+      </clover:element>
+    </clover:element>
+    <clover:element clover:name="ns1:benAcct" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_benAcct</clover:element>
+    <clover:element clover:name="ns1:benAddr1" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_benAddr1</clover:element>
+    <clover:element clover:name="ns1:benAddr2" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_benAddr2</clover:element>
+    <clover:element clover:name="ns1:benAddr3" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_benAddr3</clover:element>
+    <clover:element clover:name="ns1:benAddress1" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_benAddress1</clover:element>
+    <clover:element clover:name="ns1:benAddress2" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_benAddress2</clover:element>
+    <clover:element clover:name="ns1:benAddress3" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_benAddress3</clover:element>
+    <clover:element clover:name="ns1:benBankName" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_benBankName</clover:element>
+    <clover:element clover:name="ns1:benBic" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_benBic</clover:element>
+    <clover:element clover:name="ns1:benBranchName" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_benBranchName</clover:element>
+    <clover:element clover:name="ns1:benCountry" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_benCountry</clover:element>
+    <clover:element clover:name="ns1:benCountryName" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_benCountryName</clover:element>
+    <clover:element clover:name="ns1:benEmail" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_benEmail</clover:element>
+    <clover:element clover:name="ns1:benName" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_benName</clover:element>
+    <clover:element clover:name="ns1:benPhone" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_benPhone</clover:element>
+    <clover:element clover:name="ns1:chargeType" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_chargeType</clover:element>
+    <clover:element clover:name="ns1:cifId" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_cifId</clover:element>
+    <clover:element clover:name="ns1:currency" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_currency</clover:element>
+    <clover:element clover:name="ns1:effDate" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_effDate</clover:element>
+    <clover:element clover:name="ns1:exchangeRate" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_exchangeRate</clover:element>
+    <clover:element clover:name="ns1:exchangeTy" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_exchangeTy</clover:element>
+    <clover:element clover:name="ns1:fwdRateList" xmlns:ns1="http://bean.ift.ws.ktbcs.com">
+      <clover:element clover:name="ns1:FwdRate" clover:inPort="2" clover:key="__parent_id" clover:parentKey="__id">
+        <clover:element clover:name="ns1:dealNo">$2.ns1_dealNo</clover:element>
+        <clover:element clover:name="ns1:exchangeAmount">$2.ns1_exchangeAmount</clover:element>
+        <clover:element clover:name="ns1:expireDate">$2.ns1_expireDate</clover:element>
+        <clover:element clover:name="ns1:fwdRate">$2.ns1_fwdRate</clover:element>
+        <clover:element clover:name="ns1:fwdRateCurrency">$2.ns1_fwdRateCurrency</clover:element>
+        <clover:element clover:name="ns1:fwdRateSeqNo">$2.ns1_fwdRateSeqNo</clover:element>
+        <clover:element clover:name="ns1:limitAmount">$2.ns1_limitAmount</clover:element>
+        <clover:element clover:name="ns1:offerRateType">$2.ns1_offerRateType</clover:element>
+        <clover:element clover:name="ns1:useAmount">$2.ns1_useAmount</clover:element>
+      </clover:element>
+    </clover:element>
+    <clover:element clover:name="ns1:iftRemark" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_iftRemark</clover:element>
+    <clover:element clover:name="ns1:orderingAcct" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingAcct</clover:element>
+    <clover:element clover:name="ns1:orderingAddr1" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingAddr1</clover:element>
+    <clover:element clover:name="ns1:orderingAddr2" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingAddr2</clover:element>
+    <clover:element clover:name="ns1:orderingAddr3" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingAddr3</clover:element>
+    <clover:element clover:name="ns1:orderingAmount" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingAmount</clover:element>
+    <clover:element clover:name="ns1:orderingBank" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingBank</clover:element>
+    <clover:element clover:name="ns1:orderingBic" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingBic</clover:element>
+    <clover:element clover:name="ns1:orderingBranch" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingBranch</clover:element>
+    <clover:element clover:name="ns1:orderingCurrency" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingCurrency</clover:element>
+    <clover:element clover:name="ns1:orderingCustomerID" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingCustomerID</clover:element>
+    <clover:element clover:name="ns1:orderingEmail" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingEmail</clover:element>
+    <clover:element clover:name="ns1:orderingFax" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingFax</clover:element>
+    <clover:element clover:name="ns1:orderingId" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingId</clover:element>
+    <clover:element clover:name="ns1:orderingMobile" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingMobile</clover:element>
+    <clover:element clover:name="ns1:orderingName" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingName</clover:element>
+    <clover:element clover:name="ns1:orderingNameThai" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingNameThai</clover:element>
+    <clover:element clover:name="ns1:orderingPhone" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingPhone</clover:element>
+    <clover:element clover:name="ns1:orderingType" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_orderingType</clover:element>
+    <clover:element clover:name="ns1:otherPartyEmail" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_otherPartyEmail</clover:element>
+    <clover:element clover:name="ns1:purposeCode" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_purposeCode</clover:element>
+    <clover:element clover:name="ns1:purposeDescription" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_purposeDescription</clover:element>
+    <clover:element clover:name="ns1:remitInfo1" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_remitInfo1</clover:element>
+    <clover:element clover:name="ns1:remitInfo2" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_remitInfo2</clover:element>
+    <clover:element clover:name="ns1:remitInfo3" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_remitInfo3</clover:element>
+    <clover:element clover:name="ns1:remitInfo4" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_remitInfo4</clover:element>
+    <clover:element clover:name="ns1:termID" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_termID</clover:element>
+    <clover:element clover:name="ns1:transDate" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_transDate</clover:element>
+    <clover:element clover:name="ns1:transRefNo" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_transRefNo</clover:element>
+    <clover:element clover:name="ns1:transSource" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_transSource</clover:element>
+    <clover:element clover:name="ns1:transTime" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_transTime</clover:element>
+    <clover:element clover:name="ns1:userID" xmlns:ns1="http://bean.ift.ws.ktbcs.com">$0.ns1_userID</clover:element>
+  </clover:element>
+</clover:element>]]></attr>
+<attr name="_data_format"><![CDATA[XML]]></attr>
+<attr name="__metadata"><![CDATA[true]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Foreach 'AttachDoc' -&gt; 'ns1:AttachDoc'" guiX="460" guiY="120" id="FOREACH_ATTACH_DOC_NS1_ATTACH_DOC" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+output.__parent_id = input.__parent_id;
+//END -> DO NOT REMOVE
+output.ns1_docSeqID = input.docSeqID + input.docSeqID;]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Foreach 'FwdRate' -&gt; 'ns1:FwdRate'" guiX="460" guiY="220" id="FOREACH_FWD_RATE_NS1_FWD_RATE" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+output.__parent_id = input.__parent_id;
+//END -> DO NOT REMOVE
+output.ns1_fwdRateSeqNo = input.fwdRateSeqNo;
+output.ns1_limitAmount = input.limitAmount;
+output.ns1_useAmount = input.useAmount;]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Foreach 'iftVerify' -&gt; 'ns0:iftVerify'" guiX="460" guiY="20" id="FOREACH_IFT_VERIFY_NS0_IFT_VERIFY" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+output.ns1_amount = input.amount;
+output.ns1_orderingAmount = input.orderingAmount;]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="enabled" fileURL="dict:inputPayload" guiName="JSON READER" guiX="20" guiY="20" id="JSON_READER0" type="JSON_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context xpath="/root">
+  <Context outPort="0" sequenceField="__id" xpath="object">
+    <Mapping cloverField="amount" trim="true" xpath="request/amount"/>
+    <Mapping cloverField="benAcct" trim="true" xpath="request/benAcct"/>
+    <Mapping cloverField="benAddr1" trim="true" xpath="request/benAddr1"/>
+    <Mapping cloverField="benAddr2" trim="true" xpath="request/benAddr2"/>
+    <Mapping cloverField="benAddr3" trim="true" xpath="request/benAddr3"/>
+    <Mapping cloverField="benAddress1" trim="true" xpath="request/benAddress1"/>
+    <Mapping cloverField="benAddress2" trim="true" xpath="request/benAddress2"/>
+    <Mapping cloverField="benAddress3" trim="true" xpath="request/benAddress3"/>
+    <Mapping cloverField="benBankName" trim="true" xpath="request/benBankName"/>
+    <Mapping cloverField="benBic" trim="true" xpath="request/benBic"/>
+    <Mapping cloverField="benBranchName" trim="true" xpath="request/benBranchName"/>
+    <Mapping cloverField="benCountry" trim="true" xpath="request/benCountry"/>
+    <Mapping cloverField="benCountryName" trim="true" xpath="request/benCountryName"/>
+    <Mapping cloverField="benEmail" trim="true" xpath="request/benEmail"/>
+    <Mapping cloverField="benName" trim="true" xpath="request/benName"/>
+    <Mapping cloverField="benPhone" trim="true" xpath="request/benPhone"/>
+    <Mapping cloverField="chargeType" trim="true" xpath="request/chargeType"/>
+    <Mapping cloverField="cifId" trim="true" xpath="request/cifId"/>
+    <Mapping cloverField="currency" trim="true" xpath="request/currency"/>
+    <Mapping cloverField="effDate" trim="true" xpath="request/effDate"/>
+    <Mapping cloverField="exchangeRate" trim="true" xpath="request/exchangeRate"/>
+    <Mapping cloverField="exchangeTy" trim="true" xpath="request/exchangeTy"/>
+    <Mapping cloverField="iftRemark" trim="true" xpath="request/iftRemark"/>
+    <Mapping cloverField="orderingAcct" trim="true" xpath="request/orderingAcct"/>
+    <Mapping cloverField="orderingAddr1" trim="true" xpath="request/orderingAddr1"/>
+    <Mapping cloverField="orderingAddr2" trim="true" xpath="request/orderingAddr2"/>
+    <Mapping cloverField="orderingAddr3" trim="true" xpath="request/orderingAddr3"/>
+    <Mapping cloverField="orderingAmount" trim="true" xpath="request/orderingAmount"/>
+    <Mapping cloverField="orderingBank" trim="true" xpath="request/orderingBank"/>
+    <Mapping cloverField="orderingBic" trim="true" xpath="request/orderingBic"/>
+    <Mapping cloverField="orderingBranch" trim="true" xpath="request/orderingBranch"/>
+    <Mapping cloverField="orderingCurrency" trim="true" xpath="request/orderingCurrency"/>
+    <Mapping cloverField="orderingCustomerID" trim="true" xpath="request/orderingCustomerID"/>
+    <Mapping cloverField="orderingEmail" trim="true" xpath="request/orderingEmail"/>
+    <Mapping cloverField="orderingFax" trim="true" xpath="request/orderingFax"/>
+    <Mapping cloverField="orderingId" trim="true" xpath="request/orderingId"/>
+    <Mapping cloverField="orderingMobile" trim="true" xpath="request/orderingMobile"/>
+    <Mapping cloverField="orderingName" trim="true" xpath="request/orderingName"/>
+    <Mapping cloverField="orderingNameThai" trim="true" xpath="request/orderingNameThai"/>
+    <Mapping cloverField="orderingPhone" trim="true" xpath="request/orderingPhone"/>
+    <Mapping cloverField="orderingType" trim="true" xpath="request/orderingType"/>
+    <Mapping cloverField="otherPartyEmail" trim="true" xpath="request/otherPartyEmail"/>
+    <Mapping cloverField="purposeCode" trim="true" xpath="request/purposeCode"/>
+    <Mapping cloverField="purposeDescription" trim="true" xpath="request/purposeDescription"/>
+    <Mapping cloverField="remitInfo1" trim="true" xpath="request/remitInfo1"/>
+    <Mapping cloverField="remitInfo2" trim="true" xpath="request/remitInfo2"/>
+    <Mapping cloverField="remitInfo3" trim="true" xpath="request/remitInfo3"/>
+    <Mapping cloverField="remitInfo4" trim="true" xpath="request/remitInfo4"/>
+    <Mapping cloverField="termID" trim="true" xpath="request/termID"/>
+    <Mapping cloverField="transDate" trim="true" xpath="request/transDate"/>
+    <Mapping cloverField="transRefNo" trim="true" xpath="request/transRefNo"/>
+    <Mapping cloverField="transSource" trim="true" xpath="request/transSource"/>
+    <Mapping cloverField="transTime" trim="true" xpath="request/transTime"/>
+    <Mapping cloverField="userID" trim="true" xpath="request/userID"/>
+    <Context generatedKey="__parent_id" outPort="1" parentKey="__id" sequenceField="__id" xpath="request/attachDocList/AttachDoc">
+      <Mapping cloverField="chronicleID" trim="true" xpath="chronicleID"/>
+      <Mapping cloverField="docSeqID" trim="true" xpath="docSeqID"/>
+      <Mapping cloverField="docType" trim="true" xpath="docType"/>
+      <Mapping cloverField="docVersion" trim="true" xpath="docVersion"/>
+      <Mapping cloverField="fileName" trim="true" xpath="fileName"/>
+    </Context>
+    <Context generatedKey="__parent_id" outPort="2" parentKey="__id" sequenceField="__id" xpath="request/fwdRateList/FwdRate">
+      <Mapping cloverField="dealNo" trim="true" xpath="dealNo"/>
+      <Mapping cloverField="exchangeAmount" trim="true" xpath="exchangeAmount"/>
+      <Mapping cloverField="expireDate" trim="true" xpath="expireDate"/>
+      <Mapping cloverField="fwdRate" trim="true" xpath="fwdRate"/>
+      <Mapping cloverField="fwdRateCurrency" trim="true" xpath="fwdRateCurrency"/>
+      <Mapping cloverField="fwdRateSeqNo" trim="true" xpath="fwdRateSeqNo"/>
+      <Mapping cloverField="limitAmount" trim="true" xpath="limitAmount"/>
+      <Mapping cloverField="offerRateType" trim="true" xpath="offerRateType"/>
+      <Mapping cloverField="useAmount" trim="true" xpath="useAmount"/>
+    </Context>
+  </Context>
+</Context>
+]]></attr>
+<attr name="_data_format"><![CDATA[JSON]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="FOREACH_ATTACH_DOC_NS1_ATTACH_DOC:0" guiBendpoints="" id="Edge3" inPort="Port 1 (in)" metadata="fd2ec462-7294-464f-8e59-b052cdc6712d" outPort="Port 0 (out)" toNode="EXT_XML_WRITER0:1"/>
+<Edge debugMode="true" fromNode="FOREACH_FWD_RATE_NS1_FWD_RATE:0" guiBendpoints="" id="Edge5" inPort="Port 2 (in)" metadata="4677138b-9de6-4e78-9cc4-926fdc2b7255" outPort="Port 0 (out)" toNode="EXT_XML_WRITER0:2"/>
+<Edge debugMode="true" fromNode="FOREACH_IFT_VERIFY_NS0_IFT_VERIFY:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="09df5585-ab8d-4e90-9fc2-3209df81cc7e" outPort="Port 0 (out)" toNode="EXT_XML_WRITER0:0"/>
+<Edge debugMode="true" fromNode="JSON_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="203cffc5-7717-4572-8a8b-5fab50e2503f" outPort="Port 0 (out)" toNode="FOREACH_IFT_VERIFY_NS0_IFT_VERIFY:0"/>
+<Edge debugMode="true" fromNode="JSON_READER0:1" guiBendpoints="" id="Edge2" inPort="Port 0 (in)" metadata="dc064a15-becf-401f-9e13-a0c214fa2151" outPort="Port 1 (out)" toNode="FOREACH_ATTACH_DOC_NS1_ATTACH_DOC:0"/>
+<Edge debugMode="true" fromNode="JSON_READER0:2" guiBendpoints="" id="Edge4" inPort="Port 0 (in)" metadata="dae04bcc-4d1e-4618-87e0-94af8c614879" outPort="Port 2 (out)" toNode="FOREACH_FWD_RATE_NS1_FWD_RATE:0"/>
+</Phase>
+</Graph>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph __version="3.5.0" author="extend-it" created="Tue Jul 21 09:00:17 ICT 2015" description="Xml&lt;iftVerifyResponse&gt; To JSON" guiVersion="3.4.4.P" id="1437452249972" licenseCode="Unlicensed" licenseType="Unknown" modified="Tue Jul 21 09:00:17 ICT 2015" modifiedBy="extend-it" name="Xml_iftVerifyResponse__To_JSON" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __index="0" __referenceCounter="1" __schemaType="{http://service.ift.ws.ktbcs.com/}iftVerifyResponse" __sourcePath="{http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerifyResponse" _dataStructure="OBJECT" _id="__id" _type="Input" id="c0d0c766-b16f-490c-9b79-c57effe9e498">
+<Record fieldDelimiter="," name="iftVerifyResponse" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __implementationClass="java.math.BigDecimal" __index="0" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerifyResponse/ns0:return/ns1:data/ns1:amount" containerType="SINGLE" label="ns1:amount" name="ns1_amount" type="decimal"/>
+<Field __implementationClass="java.lang.String" __index="1" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerifyResponse/ns0:return/ns1:data/ns1:chargeType" containerType="SINGLE" label="ns1:chargeType" name="ns1_chargeType" type="string"/>
+<Field __implementationClass="java.lang.String" __index="2" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerifyResponse/ns0:return/ns1:data/ns1:effDate" containerType="SINGLE" label="ns1:effDate" name="ns1_effDate" type="string"/>
+<Field __implementationClass="java.lang.String" __index="3" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerifyResponse/ns0:return/ns1:data/ns1:exchangeRate" containerType="SINGLE" label="ns1:exchangeRate" name="ns1_exchangeRate" type="string"/>
+<Field __implementationClass="java.math.BigDecimal" __index="4" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerifyResponse/ns0:return/ns1:data/ns1:feeAmount" containerType="SINGLE" label="ns1:feeAmount" name="ns1_feeAmount" type="decimal"/>
+<Field __implementationClass="java.lang.String" __index="5" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerifyResponse/ns0:return/ns1:responseCode" containerType="SINGLE" label="ns1:responseCode" name="ns1_responseCode" type="string"/>
+<Field __implementationClass="java.lang.String" __index="6" __sourcePath="{http://bean.ift.ws.ktbcs.com=ns1,http://service.ift.ws.ktbcs.com/=ns0}/ns0:iftVerifyResponse/ns0:return/ns1:responseDesc" containerType="SINGLE" label="ns1:responseDesc" name="ns1_responseDesc" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/iftVerifyResponse" _dataStructure="OBJECT" _id="__id" _type="Output" id="694858fd-f290-40e7-bea3-5820521efa8b">
+<Record fieldDelimiter="," name="iftVerifyResponse" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="0" __sourcePath="{}/iftVerifyResponse/return/data/amount" containerType="SINGLE" label="amount" name="amount" type="decimal"/>
+<Field __index="1" __sourcePath="{}/iftVerifyResponse/return/data/chargeType" containerType="SINGLE" label="chargeType" name="chargeType" type="string"/>
+<Field __index="2" __sourcePath="{}/iftVerifyResponse/return/data/effDate" containerType="SINGLE" label="effDate" name="effDate" type="string"/>
+<Field __index="3" __sourcePath="{}/iftVerifyResponse/return/data/exchangeRate" containerType="SINGLE" label="exchangeRate" name="exchangeRate" type="string"/>
+<Field __index="4" __sourcePath="{}/iftVerifyResponse/return/data/feeAmount" containerType="SINGLE" label="feeAmount" name="feeAmount" type="decimal"/>
+<Field __index="5" __sourcePath="{}/iftVerifyResponse/return/responseCode" containerType="SINGLE" label="responseCode" name="responseCode" type="string"/>
+<Field __index="6" __sourcePath="{}/iftVerifyResponse/return/responseDesc" containerType="SINGLE" label="responseDesc" name="responseDesc" type="string"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" guiName="Foreach 'ns0:iftVerifyResponse' -&gt; 'iftVerifyResponse'" guiX="460" guiY="20" id="FOREACH_NS0_IFT_VERIFY_RESPONSE_IFT_VERIFY_RESPONSE" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+output.amount = input.ns1_amount;
+output.chargeType = input.ns1_chargeType;
+output.effDate = input.ns1_effDate;
+output.exchangeRate = input.ns1_exchangeRate;
+output.feeAmount = input.ns1_feeAmount;
+output.responseCode = input.ns1_responseCode;
+output.responseDesc = input.ns1_responseDesc;]]></attr>
+</Node>
+<Node cacheInMemory="true" charset="UTF-8" enabled="enabled" fileURL="dict:outputPayload" guiName="JSON WRITER" guiX="900" guiY="20" id="JSON_WRITER0" type="JSON_WRITER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<iftVerifyResponse xmlns:clover="http://www.cloveretl.com/ns/xmlmapping" clover:inPort="0">
+  <return>
+    <data>
+      <amount>$0.amount</amount>
+      <chargeType>$0.chargeType</chargeType>
+      <effDate>$0.effDate</effDate>
+      <exchangeRate>$0.exchangeRate</exchangeRate>
+      <feeAmount>$0.feeAmount</feeAmount>
+    </data>
+    <responseCode>$0.responseCode</responseCode>
+    <responseDesc>$0.responseDesc</responseDesc>
+  </return>
+</iftVerifyResponse>]]></attr>
+<attr name="_data_format"><![CDATA[JSON]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="enabled" fileURL="dict:inputPayload" guiName="XML READER" guiX="20" guiY="20" id="XML_READER0" type="XML_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context namespacePaths="ns0=&quot;http://service.ift.ws.ktbcs.com/&quot;" outPort="0" sequenceField="__id" xpath="/ns0:iftVerifyResponse">
+  <Mapping cloverField="ns1_amount" namespacePaths="ns0=&quot;http://service.ift.ws.ktbcs.com/&quot;;ns1=&quot;http://bean.ift.ws.ktbcs.com&quot;" trim="true" xpath="ns0:return/ns1:data/ns1:amount"/>
+  <Mapping cloverField="ns1_chargeType" namespacePaths="ns0=&quot;http://service.ift.ws.ktbcs.com/&quot;;ns1=&quot;http://bean.ift.ws.ktbcs.com&quot;" trim="true" xpath="ns0:return/ns1:data/ns1:chargeType"/>
+  <Mapping cloverField="ns1_effDate" namespacePaths="ns0=&quot;http://service.ift.ws.ktbcs.com/&quot;;ns1=&quot;http://bean.ift.ws.ktbcs.com&quot;" trim="true" xpath="ns0:return/ns1:data/ns1:effDate"/>
+  <Mapping cloverField="ns1_exchangeRate" namespacePaths="ns0=&quot;http://service.ift.ws.ktbcs.com/&quot;;ns1=&quot;http://bean.ift.ws.ktbcs.com&quot;" trim="true" xpath="ns0:return/ns1:data/ns1:exchangeRate"/>
+  <Mapping cloverField="ns1_feeAmount" namespacePaths="ns0=&quot;http://service.ift.ws.ktbcs.com/&quot;;ns1=&quot;http://bean.ift.ws.ktbcs.com&quot;" trim="true" xpath="ns0:return/ns1:data/ns1:feeAmount"/>
+  <Mapping cloverField="ns1_responseCode" namespacePaths="ns0=&quot;http://service.ift.ws.ktbcs.com/&quot;;ns1=&quot;http://bean.ift.ws.ktbcs.com&quot;" trim="true" xpath="ns0:return/ns1:responseCode"/>
+  <Mapping cloverField="ns1_responseDesc" namespacePaths="ns0=&quot;http://service.ift.ws.ktbcs.com/&quot;;ns1=&quot;http://bean.ift.ws.ktbcs.com&quot;" trim="true" xpath="ns0:return/ns1:responseDesc"/>
+</Context>
+]]></attr>
+<attr name="_data_format"><![CDATA[XML]]></attr>
+<attr name="__metadata"><![CDATA[true]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="FOREACH_NS0_IFT_VERIFY_RESPONSE_IFT_VERIFY_RESPONSE:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="694858fd-f290-40e7-bea3-5820521efa8b" outPort="Port 0 (out)" toNode="JSON_WRITER0:0"/>
+<Edge debugMode="true" fromNode="XML_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="c0d0c766-b16f-490c-9b79-c57effe9e498" outPort="Port 0 (out)" toNode="FOREACH_NS0_IFT_VERIFY_RESPONSE_IFT_VERIFY_RESPONSE:0"/>
+</Phase>
+</Graph>

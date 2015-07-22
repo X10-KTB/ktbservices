@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:data-mapper="http://www.mulesoft.org/schema/mule/ee/data-mapper" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:ws="http://www.mulesoft.org/schema/mule/ws" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.7.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/current/mule-ws.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/ee/data-mapper http://www.mulesoft.org/schema/mule/ee/data-mapper/current/mule-data-mapper.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <ws:consumer-config name="Web_Service_Consumer" wsdlLocation="http://ktbservices.cloudhub.io/iftverify?wsdl" service="IFTVerifyService" port="IFTVerifyServicePort" serviceAddress="http://localhost:8081/iftverify" doc:name="Web Service Consumer"/>
+    <data-mapper:config name="JSON_To_Xml_iftVerify_" transformationGraphPath="json_to_xml_iftverify_.grf" doc:name="JSON_To_Xml_iftVerify_"/>
+    <data-mapper:config name="Xml_iftVerifyResponse__To_JSON" transformationGraphPath="xml_iftverifyresponse__to_json.grf" doc:name="Xml_iftVerifyResponse__To_JSON"/>
+    <http:request-config name="HTTP_Rest_Request_Configuration" host="http://ktbservices.cloudhub.io/" port="8112" basePath="cardverify/card" doc:name="HTTP Request Configuration"/>
+    <flow name="soap-api-flow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/iftverify" doc:name="HTTP"/>
+        <byte-array-to-string-transformer doc:name="Byte Array to String"/>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <data-mapper:transform config-ref="JSON_To_Xml_iftVerify_" doc:name="JSON To Xml&lt;iftVerify&gt;"/>
+        <ws:consumer config-ref="Web_Service_Consumer" operation="iftVerify" doc:name="Web Service Consumer"/>
+        <data-mapper:transform config-ref="Xml_iftVerifyResponse__To_JSON" doc:name="Xml&lt;iftVerifyResponse&gt; To JSON"/>
+    </flow>
+    <flow name="rest-api-flow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/" doc:name="HTTP"/>
+        <http:request config-ref="HTTP_Rest_Request_Configuration" path="/*" method="GET" doc:name="HTTP"/>
+    </flow>
+</mule>

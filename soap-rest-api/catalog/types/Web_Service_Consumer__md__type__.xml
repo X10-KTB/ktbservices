@@ -1,0 +1,2543 @@
+<metadata__catalog__entry>
+  <version>5.2.0.0</version>
+  <types class="tree-map">
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>iftVerify</id>
+        <displayName>iftVerify</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://service.ift.ws.ktbcs.com/</namespaceURI>
+                <localPart>iftVerify</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:request</name>
+            <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+              <dataType>XML</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                      <localPart>IFTVerifyRequest</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+              <fields>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:amount</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>DECIMAL</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName>
+                            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                            <localPart>decimal</localPart>
+                            <prefix></prefix>
+                          </typeQName>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>amount</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:attachDocList</name>
+                  <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                    <dataType>XML</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName>
+                            <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                            <localPart>ArrayOfAttachDoc</localPart>
+                            <prefix></prefix>
+                          </typeQName>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                    <fields>
+                      <org.mule.common.metadata.DefaultMetaDataField>
+                        <name>ns1:AttachDoc</name>
+                        <model class="org.mule.common.metadata.DefaultListMetaDataModel">
+                          <dataType>LIST</dataType>
+                          <metaDataModelPropertiesManager>
+                            <properties>
+                              <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                <typeQName>
+                                  <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                  <localPart>AttachDoc</localPart>
+                                  <prefix></prefix>
+                                </typeQName>
+                              </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              <org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                                <maxOccurs>2147483647</maxOccurs>
+                                <minOccurs>0</minOccurs>
+                              </org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                            </properties>
+                          </metaDataModelPropertiesManager>
+                          <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                            <dataType>XML</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties/>
+                            </metaDataModelPropertiesManager>
+                            <fields>
+                              <org.mule.common.metadata.DefaultMetaDataField>
+                                <name>ns1:chronicleID</name>
+                                <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                  <dataType>STRING</dataType>
+                                  <metaDataModelPropertiesManager>
+                                    <properties>
+                                      <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        <typeQName>
+                                          <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                                          <localPart>string</localPart>
+                                          <prefix></prefix>
+                                        </typeQName>
+                                      </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                    </properties>
+                                  </metaDataModelPropertiesManager>
+                                </model>
+                                <accessType>READ_WRITE</accessType>
+                                <metaDataFieldPropertyManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      <name>
+                                        <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                        <localPart>chronicleID</localPart>
+                                        <prefix>ns1</prefix>
+                                      </name>
+                                    </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                  </properties>
+                                </metaDataFieldPropertyManager>
+                              </org.mule.common.metadata.DefaultMetaDataField>
+                              <org.mule.common.metadata.DefaultMetaDataField>
+                                <name>ns1:docSeqID</name>
+                                <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                  <dataType>INTEGER</dataType>
+                                  <metaDataModelPropertiesManager>
+                                    <properties>
+                                      <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        <typeQName>
+                                          <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                                          <localPart>int</localPart>
+                                          <prefix></prefix>
+                                        </typeQName>
+                                      </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                    </properties>
+                                  </metaDataModelPropertiesManager>
+                                </model>
+                                <accessType>READ_WRITE</accessType>
+                                <metaDataFieldPropertyManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      <name>
+                                        <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                        <localPart>docSeqID</localPart>
+                                        <prefix>ns1</prefix>
+                                      </name>
+                                    </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                  </properties>
+                                </metaDataFieldPropertyManager>
+                              </org.mule.common.metadata.DefaultMetaDataField>
+                              <org.mule.common.metadata.DefaultMetaDataField>
+                                <name>ns1:docType</name>
+                                <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                  <dataType>STRING</dataType>
+                                  <metaDataModelPropertiesManager>
+                                    <properties>
+                                      <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                      </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                    </properties>
+                                  </metaDataModelPropertiesManager>
+                                </model>
+                                <accessType>READ_WRITE</accessType>
+                                <metaDataFieldPropertyManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      <name>
+                                        <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                        <localPart>docType</localPart>
+                                        <prefix>ns1</prefix>
+                                      </name>
+                                    </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                  </properties>
+                                </metaDataFieldPropertyManager>
+                              </org.mule.common.metadata.DefaultMetaDataField>
+                              <org.mule.common.metadata.DefaultMetaDataField>
+                                <name>ns1:docVersion</name>
+                                <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                  <dataType>STRING</dataType>
+                                  <metaDataModelPropertiesManager>
+                                    <properties>
+                                      <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                      </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                    </properties>
+                                  </metaDataModelPropertiesManager>
+                                </model>
+                                <accessType>READ_WRITE</accessType>
+                                <metaDataFieldPropertyManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      <name>
+                                        <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                        <localPart>docVersion</localPart>
+                                        <prefix>ns1</prefix>
+                                      </name>
+                                    </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                  </properties>
+                                </metaDataFieldPropertyManager>
+                              </org.mule.common.metadata.DefaultMetaDataField>
+                              <org.mule.common.metadata.DefaultMetaDataField>
+                                <name>ns1:fileName</name>
+                                <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                  <dataType>STRING</dataType>
+                                  <metaDataModelPropertiesManager>
+                                    <properties>
+                                      <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                      </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                    </properties>
+                                  </metaDataModelPropertiesManager>
+                                </model>
+                                <accessType>READ_WRITE</accessType>
+                                <metaDataFieldPropertyManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      <name>
+                                        <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                        <localPart>fileName</localPart>
+                                        <prefix>ns1</prefix>
+                                      </name>
+                                    </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                  </properties>
+                                </metaDataFieldPropertyManager>
+                              </org.mule.common.metadata.DefaultMetaDataField>
+                            </fields>
+                            <rootElement>
+                              <namespaceURI>http://service.ift.ws.ktbcs.com/</namespaceURI>
+                              <localPart>iftVerify</localPart>
+                              <prefix>ns0</prefix>
+                            </rootElement>
+                            <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                              <schemas>
+                                <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://bean.ift.ws.ktbcs.com&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; attributeFormDefault=&quot;qualified&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://bean.ift.ws.ktbcs.com&quot;&gt;
+  &lt;xsd:complexType name=&quot;ArrayOfFwdRate&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;FwdRate&quot; nillable=&quot;true&quot; type=&quot;tns:FwdRate&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;AttachDoc&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;chronicleID&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docSeqID&quot; nillable=&quot;true&quot; type=&quot;xsd:int&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docType&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docVersion&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;fileName&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;ArrayOfAttachDoc&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;AttachDoc&quot; nillable=&quot;true&quot; type=&quot;tns:AttachDoc&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;IFTVerifyResponse&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;data&quot; nillable=&quot;true&quot; type=&quot;tns:Data&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;responseCode&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;responseDesc&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;Data&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;amount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;chargeType&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;effDate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;exchangeRate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;feeAmount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;IFTVerifyRequest&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;amount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;attachDocList&quot; nillable=&quot;true&quot; type=&quot;tns:ArrayOfAttachDoc&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benAcct&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benAddr1&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benAddr2&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benAddr3&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benAddress1&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benAddress2&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benAddress3&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benBankName&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benBic&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benBranchName&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benCountry&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benCountryName&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benEmail&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benName&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benPhone&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;chargeType&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;cifId&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;currency&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;effDate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;exchangeRate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;exchangeTy&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;fwdRateList&quot; nillable=&quot;true&quot; type=&quot;tns:ArrayOfFwdRate&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;iftRemark&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingAcct&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingAddr1&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingAddr2&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingAddr3&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingAmount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingBank&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingBic&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingBranch&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingCurrency&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingCustomerID&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingEmail&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingFax&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingId&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingMobile&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingName&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingNameThai&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingPhone&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingType&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;otherPartyEmail&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;purposeCode&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;purposeDescription&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;remitInfo1&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;remitInfo2&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;remitInfo3&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;remitInfo4&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;termID&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;transDate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;transRefNo&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;transSource&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;transTime&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;userID&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;FwdRate&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;dealNo&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;exchangeAmount&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;expireDate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;fwdRate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;fwdRateCurrency&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;fwdRateSeqNo&quot; nillable=&quot;true&quot; type=&quot;xsd:int&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;limitAmount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;offerRateType&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;useAmount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+&lt;/xsd:schema&gt;</string>
+                                <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns0=&quot;http://bean.ift.ws.ktbcs.com&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://service.ift.ws.ktbcs.com/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; attributeFormDefault=&quot;unqualified&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://service.ift.ws.ktbcs.com/&quot;&gt;
+  &lt;xsd:import namespace=&quot;http://bean.ift.ws.ktbcs.com&quot;/&gt;
+  &lt;xsd:element name=&quot;iftVerify&quot; type=&quot;tns:iftVerify&quot;/&gt;
+  &lt;xsd:complexType name=&quot;iftVerify&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;request&quot; type=&quot;ns0:IFTVerifyRequest&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:element name=&quot;iftVerifyResponse&quot; type=&quot;tns:iftVerifyResponse&quot;/&gt;
+  &lt;xsd:complexType name=&quot;iftVerifyResponse&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;ns0:IFTVerifyResponse&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+&lt;/xsd:schema&gt;</string>
+                              </schemas>
+                              <encoding>UTF-8</encoding>
+                              <baseUri>http://localhost:8081/iftverify?wsdl</baseUri>
+                            </schemas>
+                            <namespaceManager>
+                              <namespacePrefix>
+                                <entry>
+                                  <string>http://service.ift.ws.ktbcs.com/</string>
+                                  <string>ns0</string>
+                                </entry>
+                                <entry>
+                                  <string>http://bean.ift.ws.ktbcs.com</string>
+                                  <string>ns1</string>
+                                </entry>
+                              </namespacePrefix>
+                            </namespaceManager>
+                          </model>
+                          <isArray>false</isArray>
+                        </model>
+                        <accessType>READ_WRITE</accessType>
+                        <metaDataFieldPropertyManager>
+                          <properties>
+                            <org.mule.common.metadata.property.QNameMetaDataProperty>
+                              <name>
+                                <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                <localPart>AttachDoc</localPart>
+                                <prefix>ns1</prefix>
+                              </name>
+                            </org.mule.common.metadata.property.QNameMetaDataProperty>
+                          </properties>
+                        </metaDataFieldPropertyManager>
+                      </org.mule.common.metadata.DefaultMetaDataField>
+                    </fields>
+                    <rootElement>
+                      <namespaceURI>http://service.ift.ws.ktbcs.com/</namespaceURI>
+                      <localPart>iftVerify</localPart>
+                      <prefix>ns0</prefix>
+                    </rootElement>
+                    <schemas class="org.mule.common.metadata.StringBasedSchemaProvider" reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas"/>
+                    <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/model/namespaceManager"/>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>attachDocList</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:benAcct</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>benAcct</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:benAddr1</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>benAddr1</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:benAddr2</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>benAddr2</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:benAddr3</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>benAddr3</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:benAddress1</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>benAddress1</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:benAddress2</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>benAddress2</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:benAddress3</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>benAddress3</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:benBankName</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>benBankName</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:benBic</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>benBic</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:benBranchName</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>benBranchName</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:benCountry</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>benCountry</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:benCountryName</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>benCountryName</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:benEmail</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>benEmail</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:benName</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>benName</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:benPhone</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>benPhone</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:chargeType</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>chargeType</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:cifId</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>cifId</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:currency</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>currency</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:effDate</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>effDate</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:exchangeRate</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>exchangeRate</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:exchangeTy</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>exchangeTy</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:fwdRateList</name>
+                  <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                    <dataType>XML</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName>
+                            <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                            <localPart>ArrayOfFwdRate</localPart>
+                            <prefix></prefix>
+                          </typeQName>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                    <fields>
+                      <org.mule.common.metadata.DefaultMetaDataField>
+                        <name>ns1:FwdRate</name>
+                        <model class="org.mule.common.metadata.DefaultListMetaDataModel">
+                          <dataType>LIST</dataType>
+                          <metaDataModelPropertiesManager>
+                            <properties>
+                              <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                <typeQName>
+                                  <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                  <localPart>FwdRate</localPart>
+                                  <prefix></prefix>
+                                </typeQName>
+                              </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              <org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                                <maxOccurs>2147483647</maxOccurs>
+                                <minOccurs>0</minOccurs>
+                              </org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                            </properties>
+                          </metaDataModelPropertiesManager>
+                          <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                            <dataType>XML</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties/>
+                            </metaDataModelPropertiesManager>
+                            <fields>
+                              <org.mule.common.metadata.DefaultMetaDataField>
+                                <name>ns1:dealNo</name>
+                                <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                  <dataType>STRING</dataType>
+                                  <metaDataModelPropertiesManager>
+                                    <properties>
+                                      <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        <typeQName reference="../../../../../../../../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                      </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                    </properties>
+                                  </metaDataModelPropertiesManager>
+                                </model>
+                                <accessType>READ_WRITE</accessType>
+                                <metaDataFieldPropertyManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      <name>
+                                        <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                        <localPart>dealNo</localPart>
+                                        <prefix>ns1</prefix>
+                                      </name>
+                                    </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                  </properties>
+                                </metaDataFieldPropertyManager>
+                              </org.mule.common.metadata.DefaultMetaDataField>
+                              <org.mule.common.metadata.DefaultMetaDataField>
+                                <name>ns1:exchangeAmount</name>
+                                <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                  <dataType>STRING</dataType>
+                                  <metaDataModelPropertiesManager>
+                                    <properties>
+                                      <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        <typeQName reference="../../../../../../../../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                      </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                    </properties>
+                                  </metaDataModelPropertiesManager>
+                                </model>
+                                <accessType>READ_WRITE</accessType>
+                                <metaDataFieldPropertyManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      <name>
+                                        <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                        <localPart>exchangeAmount</localPart>
+                                        <prefix>ns1</prefix>
+                                      </name>
+                                    </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                  </properties>
+                                </metaDataFieldPropertyManager>
+                              </org.mule.common.metadata.DefaultMetaDataField>
+                              <org.mule.common.metadata.DefaultMetaDataField>
+                                <name>ns1:expireDate</name>
+                                <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                  <dataType>STRING</dataType>
+                                  <metaDataModelPropertiesManager>
+                                    <properties>
+                                      <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        <typeQName reference="../../../../../../../../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                      </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                    </properties>
+                                  </metaDataModelPropertiesManager>
+                                </model>
+                                <accessType>READ_WRITE</accessType>
+                                <metaDataFieldPropertyManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      <name>
+                                        <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                        <localPart>expireDate</localPart>
+                                        <prefix>ns1</prefix>
+                                      </name>
+                                    </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                  </properties>
+                                </metaDataFieldPropertyManager>
+                              </org.mule.common.metadata.DefaultMetaDataField>
+                              <org.mule.common.metadata.DefaultMetaDataField>
+                                <name>ns1:fwdRate</name>
+                                <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                  <dataType>STRING</dataType>
+                                  <metaDataModelPropertiesManager>
+                                    <properties>
+                                      <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        <typeQName reference="../../../../../../../../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                      </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                    </properties>
+                                  </metaDataModelPropertiesManager>
+                                </model>
+                                <accessType>READ_WRITE</accessType>
+                                <metaDataFieldPropertyManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      <name>
+                                        <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                        <localPart>fwdRate</localPart>
+                                        <prefix>ns1</prefix>
+                                      </name>
+                                    </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                  </properties>
+                                </metaDataFieldPropertyManager>
+                              </org.mule.common.metadata.DefaultMetaDataField>
+                              <org.mule.common.metadata.DefaultMetaDataField>
+                                <name>ns1:fwdRateCurrency</name>
+                                <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                  <dataType>STRING</dataType>
+                                  <metaDataModelPropertiesManager>
+                                    <properties>
+                                      <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        <typeQName reference="../../../../../../../../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                      </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                    </properties>
+                                  </metaDataModelPropertiesManager>
+                                </model>
+                                <accessType>READ_WRITE</accessType>
+                                <metaDataFieldPropertyManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      <name>
+                                        <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                        <localPart>fwdRateCurrency</localPart>
+                                        <prefix>ns1</prefix>
+                                      </name>
+                                    </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                  </properties>
+                                </metaDataFieldPropertyManager>
+                              </org.mule.common.metadata.DefaultMetaDataField>
+                              <org.mule.common.metadata.DefaultMetaDataField>
+                                <name>ns1:fwdRateSeqNo</name>
+                                <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                  <dataType>INTEGER</dataType>
+                                  <metaDataModelPropertiesManager>
+                                    <properties>
+                                      <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        <typeQName reference="../../../../../../../../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                      </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                    </properties>
+                                  </metaDataModelPropertiesManager>
+                                </model>
+                                <accessType>READ_WRITE</accessType>
+                                <metaDataFieldPropertyManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      <name>
+                                        <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                        <localPart>fwdRateSeqNo</localPart>
+                                        <prefix>ns1</prefix>
+                                      </name>
+                                    </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                  </properties>
+                                </metaDataFieldPropertyManager>
+                              </org.mule.common.metadata.DefaultMetaDataField>
+                              <org.mule.common.metadata.DefaultMetaDataField>
+                                <name>ns1:limitAmount</name>
+                                <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                  <dataType>DECIMAL</dataType>
+                                  <metaDataModelPropertiesManager>
+                                    <properties>
+                                      <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        <typeQName reference="../../../../../../../../../../../../../org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                      </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                    </properties>
+                                  </metaDataModelPropertiesManager>
+                                </model>
+                                <accessType>READ_WRITE</accessType>
+                                <metaDataFieldPropertyManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      <name>
+                                        <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                        <localPart>limitAmount</localPart>
+                                        <prefix>ns1</prefix>
+                                      </name>
+                                    </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                  </properties>
+                                </metaDataFieldPropertyManager>
+                              </org.mule.common.metadata.DefaultMetaDataField>
+                              <org.mule.common.metadata.DefaultMetaDataField>
+                                <name>ns1:offerRateType</name>
+                                <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                  <dataType>STRING</dataType>
+                                  <metaDataModelPropertiesManager>
+                                    <properties>
+                                      <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        <typeQName reference="../../../../../../../../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                      </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                    </properties>
+                                  </metaDataModelPropertiesManager>
+                                </model>
+                                <accessType>READ_WRITE</accessType>
+                                <metaDataFieldPropertyManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      <name>
+                                        <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                        <localPart>offerRateType</localPart>
+                                        <prefix>ns1</prefix>
+                                      </name>
+                                    </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                  </properties>
+                                </metaDataFieldPropertyManager>
+                              </org.mule.common.metadata.DefaultMetaDataField>
+                              <org.mule.common.metadata.DefaultMetaDataField>
+                                <name>ns1:useAmount</name>
+                                <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                  <dataType>DECIMAL</dataType>
+                                  <metaDataModelPropertiesManager>
+                                    <properties>
+                                      <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        <typeQName reference="../../../../../../../../../../../../../org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                      </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                    </properties>
+                                  </metaDataModelPropertiesManager>
+                                </model>
+                                <accessType>READ_WRITE</accessType>
+                                <metaDataFieldPropertyManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      <name>
+                                        <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                        <localPart>useAmount</localPart>
+                                        <prefix>ns1</prefix>
+                                      </name>
+                                    </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                  </properties>
+                                </metaDataFieldPropertyManager>
+                              </org.mule.common.metadata.DefaultMetaDataField>
+                            </fields>
+                            <rootElement>
+                              <namespaceURI>http://service.ift.ws.ktbcs.com/</namespaceURI>
+                              <localPart>iftVerify</localPart>
+                              <prefix>ns0</prefix>
+                            </rootElement>
+                            <schemas class="org.mule.common.metadata.StringBasedSchemaProvider" reference="../../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas"/>
+                            <namespaceManager reference="../../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/namespaceManager"/>
+                          </model>
+                          <isArray>false</isArray>
+                        </model>
+                        <accessType>READ_WRITE</accessType>
+                        <metaDataFieldPropertyManager>
+                          <properties>
+                            <org.mule.common.metadata.property.QNameMetaDataProperty>
+                              <name>
+                                <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                <localPart>FwdRate</localPart>
+                                <prefix>ns1</prefix>
+                              </name>
+                            </org.mule.common.metadata.property.QNameMetaDataProperty>
+                          </properties>
+                        </metaDataFieldPropertyManager>
+                      </org.mule.common.metadata.DefaultMetaDataField>
+                    </fields>
+                    <rootElement>
+                      <namespaceURI>http://service.ift.ws.ktbcs.com/</namespaceURI>
+                      <localPart>iftVerify</localPart>
+                      <prefix>ns0</prefix>
+                    </rootElement>
+                    <schemas class="org.mule.common.metadata.StringBasedSchemaProvider" reference="../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas"/>
+                    <namespaceManager reference="../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/namespaceManager"/>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>fwdRateList</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:iftRemark</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>iftRemark</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingAcct</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingAcct</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingAddr1</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingAddr1</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingAddr2</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingAddr2</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingAddr3</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingAddr3</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingAmount</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>DECIMAL</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingAmount</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingBank</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingBank</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingBic</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingBic</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingBranch</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingBranch</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingCurrency</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingCurrency</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingCustomerID</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingCustomerID</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingEmail</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingEmail</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingFax</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingFax</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingId</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingId</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingMobile</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingMobile</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingName</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingName</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingNameThai</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingNameThai</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingPhone</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingPhone</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:orderingType</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>orderingType</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:otherPartyEmail</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>otherPartyEmail</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:purposeCode</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>purposeCode</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:purposeDescription</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>purposeDescription</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:remitInfo1</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>remitInfo1</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:remitInfo2</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>remitInfo2</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:remitInfo3</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>remitInfo3</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:remitInfo4</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>remitInfo4</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:termID</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>termID</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:transDate</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>transDate</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:transRefNo</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>transRefNo</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:transSource</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>transSource</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:transTime</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>transTime</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:userID</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>userID</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+              </fields>
+              <rootElement>
+                <namespaceURI>http://service.ift.ws.ktbcs.com/</namespaceURI>
+                <localPart>iftVerify</localPart>
+                <prefix>ns0</prefix>
+              </rootElement>
+              <schemas class="org.mule.common.metadata.StringBasedSchemaProvider" reference="../fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas"/>
+              <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/namespaceManager"/>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://service.ift.ws.ktbcs.com/</namespaceURI>
+                    <localPart>request</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://service.ift.ws.ktbcs.com/</namespaceURI>
+          <localPart>iftVerify</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas/schemas"/>
+          <encoding reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas/encoding"/>
+          <baseUri>http://localhost:8081/iftverify?wsdl</baseUri>
+        </schemas>
+        <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/namespaceManager"/>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>iftVerifyResponse</id>
+        <displayName>iftVerifyResponse</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://service.ift.ws.ktbcs.com/</namespaceURI>
+                <localPart>iftVerifyResponse</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:return</name>
+            <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+              <dataType>XML</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                      <localPart>IFTVerifyResponse</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+              <fields>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:data</name>
+                  <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                    <dataType>XML</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName>
+                            <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                            <localPart>Data</localPart>
+                            <prefix></prefix>
+                          </typeQName>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                    <fields>
+                      <org.mule.common.metadata.DefaultMetaDataField>
+                        <name>ns1:amount</name>
+                        <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                          <dataType>DECIMAL</dataType>
+                          <metaDataModelPropertiesManager>
+                            <properties>
+                              <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                <typeQName reference="../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                              </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            </properties>
+                          </metaDataModelPropertiesManager>
+                        </model>
+                        <accessType>READ_WRITE</accessType>
+                        <metaDataFieldPropertyManager>
+                          <properties>
+                            <org.mule.common.metadata.property.QNameMetaDataProperty>
+                              <name>
+                                <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                <localPart>amount</localPart>
+                                <prefix>ns1</prefix>
+                              </name>
+                            </org.mule.common.metadata.property.QNameMetaDataProperty>
+                          </properties>
+                        </metaDataFieldPropertyManager>
+                      </org.mule.common.metadata.DefaultMetaDataField>
+                      <org.mule.common.metadata.DefaultMetaDataField>
+                        <name>ns1:chargeType</name>
+                        <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                          <dataType>STRING</dataType>
+                          <metaDataModelPropertiesManager>
+                            <properties>
+                              <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                <typeQName reference="../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                              </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            </properties>
+                          </metaDataModelPropertiesManager>
+                        </model>
+                        <accessType>READ_WRITE</accessType>
+                        <metaDataFieldPropertyManager>
+                          <properties>
+                            <org.mule.common.metadata.property.QNameMetaDataProperty>
+                              <name>
+                                <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                <localPart>chargeType</localPart>
+                                <prefix>ns1</prefix>
+                              </name>
+                            </org.mule.common.metadata.property.QNameMetaDataProperty>
+                          </properties>
+                        </metaDataFieldPropertyManager>
+                      </org.mule.common.metadata.DefaultMetaDataField>
+                      <org.mule.common.metadata.DefaultMetaDataField>
+                        <name>ns1:effDate</name>
+                        <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                          <dataType>STRING</dataType>
+                          <metaDataModelPropertiesManager>
+                            <properties>
+                              <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                <typeQName reference="../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                              </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            </properties>
+                          </metaDataModelPropertiesManager>
+                        </model>
+                        <accessType>READ_WRITE</accessType>
+                        <metaDataFieldPropertyManager>
+                          <properties>
+                            <org.mule.common.metadata.property.QNameMetaDataProperty>
+                              <name>
+                                <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                <localPart>effDate</localPart>
+                                <prefix>ns1</prefix>
+                              </name>
+                            </org.mule.common.metadata.property.QNameMetaDataProperty>
+                          </properties>
+                        </metaDataFieldPropertyManager>
+                      </org.mule.common.metadata.DefaultMetaDataField>
+                      <org.mule.common.metadata.DefaultMetaDataField>
+                        <name>ns1:exchangeRate</name>
+                        <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                          <dataType>STRING</dataType>
+                          <metaDataModelPropertiesManager>
+                            <properties>
+                              <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                <typeQName reference="../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                              </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            </properties>
+                          </metaDataModelPropertiesManager>
+                        </model>
+                        <accessType>READ_WRITE</accessType>
+                        <metaDataFieldPropertyManager>
+                          <properties>
+                            <org.mule.common.metadata.property.QNameMetaDataProperty>
+                              <name>
+                                <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                <localPart>exchangeRate</localPart>
+                                <prefix>ns1</prefix>
+                              </name>
+                            </org.mule.common.metadata.property.QNameMetaDataProperty>
+                          </properties>
+                        </metaDataFieldPropertyManager>
+                      </org.mule.common.metadata.DefaultMetaDataField>
+                      <org.mule.common.metadata.DefaultMetaDataField>
+                        <name>ns1:feeAmount</name>
+                        <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                          <dataType>DECIMAL</dataType>
+                          <metaDataModelPropertiesManager>
+                            <properties>
+                              <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                <typeQName reference="../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                              </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            </properties>
+                          </metaDataModelPropertiesManager>
+                        </model>
+                        <accessType>READ_WRITE</accessType>
+                        <metaDataFieldPropertyManager>
+                          <properties>
+                            <org.mule.common.metadata.property.QNameMetaDataProperty>
+                              <name>
+                                <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                                <localPart>feeAmount</localPart>
+                                <prefix>ns1</prefix>
+                              </name>
+                            </org.mule.common.metadata.property.QNameMetaDataProperty>
+                          </properties>
+                        </metaDataFieldPropertyManager>
+                      </org.mule.common.metadata.DefaultMetaDataField>
+                    </fields>
+                    <rootElement>
+                      <namespaceURI>http://service.ift.ws.ktbcs.com/</namespaceURI>
+                      <localPart>iftVerifyResponse</localPart>
+                      <prefix>ns0</prefix>
+                    </rootElement>
+                    <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                      <schemas>
+                        <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://bean.ift.ws.ktbcs.com&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; attributeFormDefault=&quot;qualified&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://bean.ift.ws.ktbcs.com&quot;&gt;
+  &lt;xsd:complexType name=&quot;ArrayOfFwdRate&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;FwdRate&quot; nillable=&quot;true&quot; type=&quot;tns:FwdRate&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;AttachDoc&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;chronicleID&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docSeqID&quot; nillable=&quot;true&quot; type=&quot;xsd:int&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docType&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docVersion&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;fileName&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;ArrayOfAttachDoc&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;AttachDoc&quot; nillable=&quot;true&quot; type=&quot;tns:AttachDoc&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;IFTVerifyResponse&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;data&quot; nillable=&quot;true&quot; type=&quot;tns:Data&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;responseCode&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;responseDesc&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;Data&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;amount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;chargeType&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;effDate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;exchangeRate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;feeAmount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;IFTVerifyRequest&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;amount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;attachDocList&quot; nillable=&quot;true&quot; type=&quot;tns:ArrayOfAttachDoc&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benAcct&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benAddr1&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benAddr2&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benAddr3&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benAddress1&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benAddress2&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benAddress3&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benBankName&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benBic&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benBranchName&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benCountry&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benCountryName&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benEmail&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benName&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;benPhone&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;chargeType&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;cifId&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;currency&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;effDate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;exchangeRate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;exchangeTy&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;fwdRateList&quot; nillable=&quot;true&quot; type=&quot;tns:ArrayOfFwdRate&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;iftRemark&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingAcct&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingAddr1&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingAddr2&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingAddr3&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingAmount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingBank&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingBic&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingBranch&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingCurrency&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingCustomerID&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingEmail&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingFax&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingId&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingMobile&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingName&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingNameThai&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingPhone&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;orderingType&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;otherPartyEmail&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;purposeCode&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;purposeDescription&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;remitInfo1&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;remitInfo2&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;remitInfo3&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;remitInfo4&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;termID&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;transDate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;transRefNo&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;transSource&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;transTime&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;userID&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;FwdRate&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;dealNo&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;exchangeAmount&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;expireDate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;fwdRate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;fwdRateCurrency&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;fwdRateSeqNo&quot; nillable=&quot;true&quot; type=&quot;xsd:int&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;limitAmount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;offerRateType&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;useAmount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+&lt;/xsd:schema&gt;</string>
+                        <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns0=&quot;http://bean.ift.ws.ktbcs.com&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://service.ift.ws.ktbcs.com/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; attributeFormDefault=&quot;unqualified&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://service.ift.ws.ktbcs.com/&quot;&gt;
+  &lt;xsd:import namespace=&quot;http://bean.ift.ws.ktbcs.com&quot;/&gt;
+  &lt;xsd:element name=&quot;iftVerify&quot; type=&quot;tns:iftVerify&quot;/&gt;
+  &lt;xsd:complexType name=&quot;iftVerify&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;request&quot; type=&quot;ns0:IFTVerifyRequest&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:element name=&quot;iftVerifyResponse&quot; type=&quot;tns:iftVerifyResponse&quot;/&gt;
+  &lt;xsd:complexType name=&quot;iftVerifyResponse&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;ns0:IFTVerifyResponse&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+&lt;/xsd:schema&gt;</string>
+                      </schemas>
+                      <encoding reference="../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas/encoding"/>
+                      <baseUri>http://localhost:8081/iftverify?wsdl</baseUri>
+                    </schemas>
+                    <namespaceManager>
+                      <namespacePrefix>
+                        <entry>
+                          <string>http://service.ift.ws.ktbcs.com/</string>
+                          <string>ns0</string>
+                        </entry>
+                        <entry>
+                          <string>http://bean.ift.ws.ktbcs.com</string>
+                          <string>ns1</string>
+                        </entry>
+                      </namespacePrefix>
+                    </namespaceManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>data</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:responseCode</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>responseCode</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns1:responseDesc</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://bean.ift.ws.ktbcs.com</namespaceURI>
+                          <localPart>responseDesc</localPart>
+                          <prefix>ns1</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+              </fields>
+              <rootElement>
+                <namespaceURI>http://service.ift.ws.ktbcs.com/</namespaceURI>
+                <localPart>iftVerifyResponse</localPart>
+                <prefix>ns0</prefix>
+              </rootElement>
+              <schemas class="org.mule.common.metadata.StringBasedSchemaProvider" reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas"/>
+              <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/namespaceManager"/>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://service.ift.ws.ktbcs.com/</namespaceURI>
+                    <localPart>return</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://service.ift.ws.ktbcs.com/</namespaceURI>
+          <localPart>iftVerifyResponse</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas/schemas"/>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas/encoding"/>
+          <baseUri>http://localhost:8081/iftverify?wsdl</baseUri>
+        </schemas>
+        <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/namespaceManager"/>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+  </types>
+  <connectorName>Web_Service_Consumer</connectorName>
+</metadata__catalog__entry>

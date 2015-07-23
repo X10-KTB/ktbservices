@@ -255,30 +255,9 @@
                             <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
                               <schemas>
                                 <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://bean.ift.ws.ktbcs.com&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; attributeFormDefault=&quot;qualified&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://bean.ift.ws.ktbcs.com&quot;&gt;
-  &lt;xsd:complexType name=&quot;ArrayOfFwdRate&quot;&gt;
-    &lt;xsd:sequence&gt;
-      &lt;xsd:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;FwdRate&quot; nillable=&quot;true&quot; type=&quot;tns:FwdRate&quot;/&gt;
-    &lt;/xsd:sequence&gt;
-  &lt;/xsd:complexType&gt;
-  &lt;xsd:complexType name=&quot;AttachDoc&quot;&gt;
-    &lt;xsd:sequence&gt;
-      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;chronicleID&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
-      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docSeqID&quot; nillable=&quot;true&quot; type=&quot;xsd:int&quot;/&gt;
-      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docType&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
-      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docVersion&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
-      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;fileName&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
-    &lt;/xsd:sequence&gt;
-  &lt;/xsd:complexType&gt;
   &lt;xsd:complexType name=&quot;ArrayOfAttachDoc&quot;&gt;
     &lt;xsd:sequence&gt;
       &lt;xsd:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;AttachDoc&quot; nillable=&quot;true&quot; type=&quot;tns:AttachDoc&quot;/&gt;
-    &lt;/xsd:sequence&gt;
-  &lt;/xsd:complexType&gt;
-  &lt;xsd:complexType name=&quot;IFTVerifyResponse&quot;&gt;
-    &lt;xsd:sequence&gt;
-      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;data&quot; nillable=&quot;true&quot; type=&quot;tns:Data&quot;/&gt;
-      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;responseCode&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
-      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;responseDesc&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
     &lt;/xsd:sequence&gt;
   &lt;/xsd:complexType&gt;
   &lt;xsd:complexType name=&quot;Data&quot;&gt;
@@ -288,6 +267,13 @@
       &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;effDate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
       &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;exchangeRate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
       &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;feeAmount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;IFTVerifyResponse&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;data&quot; nillable=&quot;true&quot; type=&quot;tns:Data&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;responseCode&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;responseDesc&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
     &lt;/xsd:sequence&gt;
   &lt;/xsd:complexType&gt;
   &lt;xsd:complexType name=&quot;IFTVerifyRequest&quot;&gt;
@@ -350,6 +336,11 @@
       &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;userID&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
     &lt;/xsd:sequence&gt;
   &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;ArrayOfFwdRate&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;FwdRate&quot; nillable=&quot;true&quot; type=&quot;tns:FwdRate&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
   &lt;xsd:complexType name=&quot;FwdRate&quot;&gt;
     &lt;xsd:sequence&gt;
       &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;dealNo&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
@@ -361,6 +352,15 @@
       &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;limitAmount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
       &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;offerRateType&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
       &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;useAmount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;AttachDoc&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;chronicleID&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docSeqID&quot; nillable=&quot;true&quot; type=&quot;xsd:int&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docType&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docVersion&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;fileName&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
     &lt;/xsd:sequence&gt;
   &lt;/xsd:complexType&gt;
 &lt;/xsd:schema&gt;</string>
@@ -381,7 +381,7 @@
 &lt;/xsd:schema&gt;</string>
                               </schemas>
                               <encoding>UTF-8</encoding>
-                              <baseUri>http://localhost:8081/iftverify?wsdl</baseUri>
+                              <baseUri>http://54.86.139.176:8081/iftverify?wsdl</baseUri>
                             </schemas>
                             <namespaceManager>
                               <namespacePrefix>
@@ -2101,7 +2101,7 @@
         <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
           <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas/schemas"/>
           <encoding reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas/encoding"/>
-          <baseUri>http://localhost:8081/iftverify?wsdl</baseUri>
+          <baseUri>http://54.86.139.176:8081/iftverify?wsdl</baseUri>
         </schemas>
         <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/namespaceManager"/>
       </org.mule.common.metadata.DefaultXmlMetaDataModel>
@@ -2298,30 +2298,9 @@
                     <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
                       <schemas>
                         <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://bean.ift.ws.ktbcs.com&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; attributeFormDefault=&quot;qualified&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://bean.ift.ws.ktbcs.com&quot;&gt;
-  &lt;xsd:complexType name=&quot;ArrayOfFwdRate&quot;&gt;
-    &lt;xsd:sequence&gt;
-      &lt;xsd:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;FwdRate&quot; nillable=&quot;true&quot; type=&quot;tns:FwdRate&quot;/&gt;
-    &lt;/xsd:sequence&gt;
-  &lt;/xsd:complexType&gt;
-  &lt;xsd:complexType name=&quot;AttachDoc&quot;&gt;
-    &lt;xsd:sequence&gt;
-      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;chronicleID&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
-      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docSeqID&quot; nillable=&quot;true&quot; type=&quot;xsd:int&quot;/&gt;
-      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docType&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
-      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docVersion&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
-      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;fileName&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
-    &lt;/xsd:sequence&gt;
-  &lt;/xsd:complexType&gt;
   &lt;xsd:complexType name=&quot;ArrayOfAttachDoc&quot;&gt;
     &lt;xsd:sequence&gt;
       &lt;xsd:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;AttachDoc&quot; nillable=&quot;true&quot; type=&quot;tns:AttachDoc&quot;/&gt;
-    &lt;/xsd:sequence&gt;
-  &lt;/xsd:complexType&gt;
-  &lt;xsd:complexType name=&quot;IFTVerifyResponse&quot;&gt;
-    &lt;xsd:sequence&gt;
-      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;data&quot; nillable=&quot;true&quot; type=&quot;tns:Data&quot;/&gt;
-      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;responseCode&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
-      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;responseDesc&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
     &lt;/xsd:sequence&gt;
   &lt;/xsd:complexType&gt;
   &lt;xsd:complexType name=&quot;Data&quot;&gt;
@@ -2331,6 +2310,13 @@
       &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;effDate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
       &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;exchangeRate&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
       &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;feeAmount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;IFTVerifyResponse&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;data&quot; nillable=&quot;true&quot; type=&quot;tns:Data&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;responseCode&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;responseDesc&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
     &lt;/xsd:sequence&gt;
   &lt;/xsd:complexType&gt;
   &lt;xsd:complexType name=&quot;IFTVerifyRequest&quot;&gt;
@@ -2393,6 +2379,11 @@
       &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;userID&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
     &lt;/xsd:sequence&gt;
   &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;ArrayOfFwdRate&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;FwdRate&quot; nillable=&quot;true&quot; type=&quot;tns:FwdRate&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
   &lt;xsd:complexType name=&quot;FwdRate&quot;&gt;
     &lt;xsd:sequence&gt;
       &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;dealNo&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
@@ -2404,6 +2395,15 @@
       &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;limitAmount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
       &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;offerRateType&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
       &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;useAmount&quot; nillable=&quot;true&quot; type=&quot;xsd:decimal&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+  &lt;xsd:complexType name=&quot;AttachDoc&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;chronicleID&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docSeqID&quot; nillable=&quot;true&quot; type=&quot;xsd:int&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docType&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;docVersion&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element minOccurs=&quot;0&quot; name=&quot;fileName&quot; nillable=&quot;true&quot; type=&quot;xsd:string&quot;/&gt;
     &lt;/xsd:sequence&gt;
   &lt;/xsd:complexType&gt;
 &lt;/xsd:schema&gt;</string>
@@ -2424,7 +2424,7 @@
 &lt;/xsd:schema&gt;</string>
                       </schemas>
                       <encoding reference="../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas/encoding"/>
-                      <baseUri>http://localhost:8081/iftverify?wsdl</baseUri>
+                      <baseUri>http://54.86.139.176:8081/iftverify?wsdl</baseUri>
                     </schemas>
                     <namespaceManager>
                       <namespacePrefix>
@@ -2533,7 +2533,7 @@
         <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
           <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas/schemas"/>
           <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas/encoding"/>
-          <baseUri>http://localhost:8081/iftverify?wsdl</baseUri>
+          <baseUri>http://54.86.139.176:8081/iftverify?wsdl</baseUri>
         </schemas>
         <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/namespaceManager"/>
       </org.mule.common.metadata.DefaultXmlMetaDataModel>

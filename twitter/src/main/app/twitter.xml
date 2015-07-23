@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:twitter="http://www.mulesoft.org/schema/mule/twitter" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.7.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/twitter http://www.mulesoft.org/schema/mule/twitter/current/mule-twitter.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <twitter:config name="Twitter__Configuration" accessKey="3255633494-nFSMVpTfHEpuazSNegD3YO6vljjB8FJdR9NZYUP" accessSecret="CKOlqMIlcctwrMGo2IkeEfVcPaj74C1qCx9YVsy6ml87a" consumerKey="DMuRxBwFcqzoJX8iCbBENkVhB" consumerSecret="y7hVUjAvt0wXgQTy9y77r7mJJ1RuXKqeX6H9Kb5Sdjdr23W9tM" doc:name="Twitter: Configuration"/>
+    <flow name="twitterFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/tweet" doc:name="HTTP"/>
+        <logger level="INFO" doc:name="Logger"/>
+        <twitter:update-status config-ref="Twitter__Configuration" status="Demo" doc:name="Twitter"/>
+        <set-payload value="Success" doc:name="Set Payload"/>
+    </flow>
+</mule>
